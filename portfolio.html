@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
     :root{ --bg:#0a0b0f; --card:#0f1117; --accent:#7aa2ff; --text:#e8eefc; --muted:#a5b0c6; --ring:rgba(122,162,255,.35); }
     *{box-sizing:border-box} html,body{height:100%}
@@ -90,9 +91,10 @@
       </section>
 
       <section class="card">
-        <div class="card-header"><h2>Previews</h2><span class="muted"></code></span></div>
+        <div class="card-header"><h2>Previews</h2><span class="muted"></span></div>
         <div class="gallery">
-          <div class="track" data-src="assets/preview1.mp3">
+          <!-- no assets/ folder; files sit next to this HTML -->
+          <div class="track" data-src="preview1.mp3">
             <button class="play" aria-label="Play">▶</button>
             <div>
               <div class="track-title">Preview 1</div>
@@ -100,7 +102,7 @@
             </div>
             <div class="time">0:00</div>
           </div>
-          <div class="track" data-src="assets/preview2.mp3">
+          <div class="track" data-src="preview2.mp3">
             <button class="play" aria-label="Play">▶</button>
             <div>
               <div class="track-title">Preview 2</div>
@@ -149,4 +151,3 @@
   </script>
 </body>
 </html>
-
