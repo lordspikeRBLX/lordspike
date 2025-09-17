@@ -331,10 +331,6 @@
 
     function scrub(){
       let items = load();
-      // exact timestamp purge: 2025-09-17 17:15:28 (local)
-      const targetSec = Math.floor(new Date('2025-09-17T17:15:28').getTime()/1000);
-      const before = items.length;
-      items = items.filter(it => Math.floor(it.ts/1000) !== targetSec);
       // profanity/slur purge
       items = items.filter(it => !hasBadWords(it.name, it.title, it.desc));
       if(items.length !== before){ save(items); }
